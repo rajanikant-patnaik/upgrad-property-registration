@@ -1,4 +1,4 @@
-# upgrad-property-registration
+#  property-registration
 Property registration is the process by which you register the documents related to a property of yours with legal entities. 
 
 ## Fabric Network

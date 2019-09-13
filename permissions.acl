@@ -33,6 +33,14 @@ rule UserAccessOnlyHisProperties {
     condition: (r.owner.getIdentifier() === p.getIdentifier())
     action: ALLOW
 }
+//All users can READ all properties
+rule UserReadAllSaleProperties {
+    description: "Allow Users to read all properties listed for sale"
+    participant: "org.property.registration.User"
+    operation: READ
+    resource: "org.property.registration.Property"
+    action: ALLOW
+}
 
 // User can access all participant list
 rule UserCanAccessAllParticipant {
